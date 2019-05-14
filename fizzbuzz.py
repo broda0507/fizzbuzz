@@ -16,4 +16,8 @@ def fizzbuzz():
 
 
 if __name__ == '__main__':
-    fizzbuzz()
+    while True:
+        fizzbuzz()
+        prompt = input('Do u want to continue? [y]/[n]: ')
+        if prompt.lower() != 'y':
+            break
